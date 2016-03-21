@@ -14,6 +14,18 @@
     </Overview>
     <Description>
         Glances is a cross-platform curses-based monitoring tool which aims to present a maximum of information in a minimum of space, ideally to fit in a classical 80x24 terminal or higher to have additional information. It can adapt dynamically the displayed information depending on the terminal size. It can also work in client/server mode. Remote monitoring could be done via terminal or web interface.
+
+        I recommend writing a `glances.conf` to the config folder with this content:
+
+        ```
+        [fs]
+        allow=shfs
+        hide=/etc/*,/config
+        [diskio]
+        hide=loop0,loop1
+        [network]
+        hide=gre0,gretap0,ip_vtio0,tunl0
+        ```
     </Description>
     <Github>https://github.com/adrien-f/unraid-docker-templates</Github>
     <Repository>adrien/glances-unraid</Repository>
@@ -35,6 +47,11 @@
         <Volume>
             <HostDir>/var/run/docker.sock</HostDir>
             <ContainerDir>/var/run/docker.sock</ContainerDir>
+            <Mode>ro</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user</HostDir>
+            <ContainerDir>/media</ContainerDir>
             <Mode>ro</Mode>
         </Volume>
         <Volume>
