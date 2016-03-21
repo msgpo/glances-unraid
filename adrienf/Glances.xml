@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+    <Beta>False</Beta>
+    <Category>Network:Other Tools:</Category>
+    <Date>2016-03-21</Date>
+    <Name>Glances</Name>
+    <Project>http://nicolargo.github.io/glances/</Project>
+    <Changes>
+### 21-03-2016
+* Initial commit
+    </Changes>
+    <Overview>
+        Glances is a cross-platform curses-based system monitoring tool written in Python.
+    </Overview>
+    <Description>
+        Glances is a cross-platform curses-based monitoring tool which aims to present a maximum of information in a minimum of space, ideally to fit in a classical 80x24 terminal or higher to have additional information. It can adapt dynamically the displayed information depending on the terminal size. It can also work in client/server mode. Remote monitoring could be done via terminal or web interface.
+    </Description>
+    <Github>https://github.com/adrien-f/unraid-docker-templates</Github>
+    <Repository>adrien-f/glances</Repository>
+    <Support></Support>
+    <BindTime></BindTime>
+    <Privileged>true</Privileged>
+    <Networking>
+        <Mode>host</Mode>
+        <Publish/>
+    </Networking>
+    <Environment/>
+    <Data>
+        <Volume>
+            <HostDir>/var/run/docker.sock</HostDir>
+            <ContainerDir>/var/run/docker.sock</ContainerDir>
+            <Mode>ro</Mode>
+        </Volume>
+    </Data>
+    <WebUI>http://[IP]:[PORT:61208]</WebUI>
+    <Banner></Banner>
+    <Icon>http://nicolargo.github.io/glances/public/images/glances.png</Icon>
+</Containers>
