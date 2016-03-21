@@ -16,7 +16,7 @@
         Glances is a cross-platform curses-based monitoring tool which aims to present a maximum of information in a minimum of space, ideally to fit in a classical 80x24 terminal or higher to have additional information. It can adapt dynamically the displayed information depending on the terminal size. It can also work in client/server mode. Remote monitoring could be done via terminal or web interface.
     </Description>
     <Github>https://github.com/adrien-f/unraid-docker-templates</Github>
-    <Repository>adrien-f/glances</Repository>
+    <Repository>adrien/glances-unraid</Repository>
     <Support></Support>
     <BindTime></BindTime>
     <Privileged>true</Privileged>
