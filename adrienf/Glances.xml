@@ -43,6 +43,7 @@
             <Mode>rw</Mode>
         </Volume>
     </Data>
+    <ExtraParams>--pid=host</ExtraParams>
     <WebUI>http://[IP]:[PORT:61208]</WebUI>
     <Banner></Banner>
     <Icon>http://nicolargo.github.io/glances/public/images/glances.png</Icon>
