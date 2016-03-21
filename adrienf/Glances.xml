@@ -22,7 +22,13 @@
     <Privileged>true</Privileged>
     <Networking>
         <Mode>host</Mode>
-        <Publish/>
+        <Publish>
+            <Port>
+                <HostPort>61208</HostPort>
+                <ContainerPort>61208</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
     </Networking>
     <Environment/>
     <Data>
@@ -30,6 +36,11 @@
             <HostDir>/var/run/docker.sock</HostDir>
             <ContainerDir>/var/run/docker.sock</ContainerDir>
             <Mode>ro</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/appdata/glances</HostDir>
+            <ContainerDir>/config</ContainerDir>
+            <Mode>rw</Mode>
         </Volume>
     </Data>
     <WebUI>http://[IP]:[PORT:61208]</WebUI>
