@@ -28,7 +28,7 @@
         ```
     </Description>
     <Github>https://github.com/adrien-f/unraid-docker-templates</Github>
-    <Repository>adrien/glances-unraid</Repository>
+    <Repository>drewster727/glances-unraid</Repository>
     <Support></Support>
     <BindTime></BindTime>
     <Privileged>true</Privileged>
